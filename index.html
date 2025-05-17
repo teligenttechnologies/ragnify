@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Music App - Home</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       /* Hide scrollbar for Chrome, Safari and Opera */
@@ -24,35 +25,33 @@
         <div
           class="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center font-bold text-lg cursor-pointer select-none"
         >
-        <button
-        id="btn-login"
-        href="profile.html">D</button>
+          <a id="btn-login" href="profile.html">D</a>
         </div>
         <nav
           class="flex space-x-3 bg-gray-800 rounded-full px-1 py-1 text-sm font-semibold select-none"
         >
           <button
             id="btn-all"
-            class="bg-green-500 px-4 py-1 rounded-full focus:outline-none"
+            class="px-4 py-1 rounded-full hover:bg-gray-700 focus:outline-none"
           >
-            All
+            <a id="btn-all" href="index.html">All</a>
           </button>
           <button
             id="btn-music"
-            href="music.html"
             class="px-4 py-1 rounded-full hover:bg-gray-700 focus:outline-none"
           >
-            Music
+            <a href="music.html">Music</a>
           </button>
           <button
             id="btn-podcasts"
             class="px-4 py-1 rounded-full hover:bg-gray-700 focus:outline-none"
           >
-            Podcasts
+            <a href="podcast.html">Podcasts</a>
           </button>
         </nav>
       </div>
     </header>
+
 
     <!-- Artists / Moods Grid -->
     <section
@@ -68,7 +67,8 @@
           alt="Jass Manak"
           class="w-12 h-12 rounded-full object-cover"
         />
-        <span class="font-medium text-white">Jass Manak</span>
+        <a href="player.html">
+        <span class="font-medium text-white">Jass Manak</span></a>
       </div>
 
       <div
@@ -79,7 +79,8 @@
           alt="HARNOOR All Songs"
           class="w-12 h-12 rounded-full object-cover"
         />
-        <span class="font-medium text-white">HARNOOR All Songs</span>
+        <a href="player.html">
+        <span class="font-medium text-white">HARNOOR All Songs</span></a>
       </div>
 
       <div
@@ -90,7 +91,8 @@
           alt="Mood"
           class="w-12 h-12 rounded-full object-cover"
         />
-        <span class="font-medium text-white">Mood</span>
+        <a href="player.html">
+        <span class="font-medium text-white">Mood</span></a>
       </div>
 
       <div
@@ -101,7 +103,8 @@
           alt="Rich & Famous"
           class="w-12 h-12 rounded-full object-cover"
         />
-        <span class="font-medium text-white">Rich & Famous</span>
+        <a href="player.html">
+        <span class="font-medium text-white">Rich & Famous</span></a>
       </div>
 
       <div
@@ -112,7 +115,8 @@
           alt="Prm Nagra"
           class="w-12 h-12 rounded-full object-cover"
         />
-        <span class="font-medium text-white">Prm Nagra</span>
+        <a href="player.html">
+        <span class="font-medium text-white">Prm Nagra</span></a>
       </div>
 
       <div
@@ -787,103 +791,14 @@
       </div>
     </section>
 
-    <!-- Bottom Nav -->
-    <nav
-      class="fixed bottom-0 left-0 right-0 bg-gray-800 flex justify-around py-3 text-gray-400 text-sm font-semibold"
-    >
-      <button class="flex flex-col items-center text-white">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6 mb-1"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M3 12l7-7 7 7M5 10v10h14V10"
-          />
-        </svg>
-        Home
-      </button>
-
-      <button class="flex flex-col items-center mb-1">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6 mb-1"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <circle cx="11" cy="11" r="8" stroke-width="2" />
-          <line x1="21" y1="21" x2="16.65" y2="16.65" stroke-width="2" />
-        </svg>
-        Search
-      </button>
-
-      <button class="flex flex-col items-center mb-1">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6 mb-1"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M19 20H5a2 2 0 01-2-2V7a2 2 0 012-2h14a2 2 0 012 2v11a2 2 0 01-2 2z"
-          />
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M12 10v6m3-3H9"
-          />
-        </svg>
-        Your Library
-      </button>
-
-      <button class="flex flex-col items-center mb-1">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6 mb-1"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <circle cx="12" cy="12" r="10" stroke-width="2" />
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M14.31 8l5.74 9.94M9.69 8h11.48"
-          />
-        </svg>
-        Premium
-      </button>
-
-      <button class="flex flex-col items-center mb-1">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6 mb-1"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M12 4v16m8-8H4"
-          />
-        </svg>
-        Create
-      </button>
-    </nav>
+  <!-- Bottom Navigation -->
+  <div class="fixed bottom-0 left-0 right-0 bg-black border-t border-gray-800 text-white text-xs py-2 px-6 flex justify-between items-center">
+    <div class="flex flex-col items-center"><i class="fas fa-home text-xl"></i><span><a href="index.html">Home</a></span></div>
+    <div class="flex flex-col items-center text-green-400"><i class="fas fa-search text-xl"></i><span><a href="search.html">Search</a></span></div>
+    <div class="flex flex-col items-center"><i class="fas fa-bars text-xl"></i><span><a href="library.html">Your Library</a></span></div>
+    <div class="flex flex-col items-center"><i class="fab fa-spotify text-xl"></i><span><a href="premium.html">Premium</a></span></div>
+    <div class="flex flex-col items-center"><i class="fas fa-plus text-xl"></i><span><a href="create.html">Create</a></span></div>
+  </div>
     <script src="main.js"></script>
   </body>
 </html>

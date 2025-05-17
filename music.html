@@ -8,18 +8,39 @@
 </head>
 <body class="bg-black text-white font-sans">
 
-  <!-- ✅ Top Bar -->
-  <section class="flex items-center justify-between px-4 py-3">
-    
-  </section>
+  <!-- Top Bar -->
+    <header class="flex items-center justify-between px-4 pt-4 pb-2">
+      <div class="flex items-center space-x-4">
+        <div
+          class="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center font-bold text-lg cursor-pointer select-none"
+        >
+          <a id="btn-login" href="profile.html">D</a>
+        </div>
+        <nav
+          class="flex space-x-3 bg-gray-800 rounded-full px-1 py-1 text-sm font-semibold select-none"
+        >
+          <button
+            id="btn-all"
+            class="px-4 py-1 rounded-full hover:bg-gray-700 focus:outline-none"
+          >
+            <a id="btn-all" href="index.html">All</a>
+          </button>
+          <button
+            id="btn-music"
+            class="px-4 py-1 rounded-full hover:bg-gray-700 focus:outline-none"
+          >
+            <a href="music.html">Music</a>
+          </button>
+          <button
+            id="btn-podcasts"
+            class="px-4 py-1 rounded-full hover:bg-gray-700 focus:outline-none"
+          >
+            <a href="podcast.html">Podcasts</a>
+          </button>
+        </nav>
+      </div>
+    </header>
 
-  <!-- ✅ Tabs Section -->
-  <section class="flex items-center space-x-4 px-4">
-    <div class="bg-purple-700 text-white rounded-full px-3 py-1">D</div>
-    <button class="bg-gray-700 text-white px-4 py-1 rounded-full">All</button>
-    <button class="bg-green-400 text-black px-4 py-1 rounded-full font-semibold">Music</button>
-    <button class="bg-gray-700 text-white px-4 py-1 rounded-full">Podcasts</button>
-  </section>
 
   <!-- ✅ Header Section -->
   <section class="mt-6 px-4">
